@@ -10,14 +10,14 @@ function App() {
       <BaseStyle />
       <button
         onClick={() => setIsOpen(true)}
-        className="openModalBtn"
         style={{
           padding: '10px',
           margin: '50px 50px',
           borderRadius: '5px',
           border: 'none',
-          color: 'green',
-          hover: { background: 'green' },
+          color: 'white',
+          backgroundColor: 'green',
+          fontSize: '20px',
         }}
       >
         Click to Open Modal

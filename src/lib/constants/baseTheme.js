@@ -3,6 +3,12 @@ import { ColorsSchema, primaryFont } from './themes';
 
 const BaseStyle = createGlobalStyle`
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 *, ::after, ::before{
     margin: 0;
     padding: 0;
@@ -11,6 +17,7 @@ const BaseStyle = createGlobalStyle`
   body { 
     background: ${ColorsSchema['neutral-100']};
     font-family: ${primaryFont};
+    font-size: 1rem;
   }
 `;
 
