@@ -52,12 +52,10 @@ const Modal = ({
           )}
 
           <Title darkMode={false} theme={ColorsSchema}>
-            {title || 'Employee created!'}
+            {title || 'Employee is created!'}
           </Title>
 
-          <Text theme={ColorsSchema}>
-            {text || 'If you want, you can create more !'}
-          </Text>
+          <Text theme={ColorsSchema}>{text || 'You can create more !'}</Text>
           {button && (
             <Button
               onClick={() => setIsOpen(false)}

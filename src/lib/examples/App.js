@@ -28,7 +28,6 @@ function App() {
           setIsOpen={() => setIsOpen((prev) => !prev)}
           close={() => setIsOpen(false)}
           check
-          text="test"
           darkMode={darkMode}
         />
       ) : null}
