@@ -38,7 +38,7 @@ ________________________________________________________________________________
 | ----------------- | ---------- | ------------------------- | -------- |
 | `setIsOpen`       | () => void | `false`                   | Yes      |
 | `title`           | String     | `'Employee is created!'`  | No       |
-| `text`            | ReactNode  | `'You can create more !'` | No       |
+| `text`            | String     | `'You can create more !'` | No       |
 | `darkMode`        | Boolean    | `false`                   | No       |
 | `close`           | Boolean    | `true`                    | No       |
 | `closeColor`      | String     | `"red-300"`               | No       |
