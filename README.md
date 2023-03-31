@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Custom Modal Component  React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A styled modal component using the styled-components library. The component contains various styles for the different components.
 
-## Available Scripts
+## How to install
 
-In the project directory, you can run:
+You can find the npm package [here](https://github.com/laminemessaci/ModaleNpm).\
+You can find the github repository [here](https://github.com/laminemessaci/ModaleNpm).
 
-### `npm start`
+```jsx
+npm install customized-modal-react
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```jsx
+import React, { Component } from 'react'
+import Modal from 'customized-modal-react'
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+const Example = () => {
 
-### `npm test`
+    const [isOpen, setIsOpen] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+return(
+    <>
 
-### `npm run build`
+    {isOpen && <Modal darkMode={false} setIsOpen={setIsOpen} close/>}
+    <button onClick={() => setIsOpen(true)}>Open</button>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    </>
+)
+}
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📌 Props
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+_________________________________________________________________________________
+| Prop              | Type       | Default                   | Required |
+| ----------------- | ---------- | ------------------------- | -------- |
+| `setIsOpen`       | () => void | `false`                   | Yes      |
+| `title`           | String     | `'Employee is created!'`  | No       |
+| `text`            | ReactNode  | `'You can create more !'` | No       |
+| `darkMode`        | Boolean    | `false`                   | No       |
+| `close`           | Boolean    | `true`                    | No       |
+| `closeColor`      | String     | `"red-300"`               | No       |
+| `closeSize`       | String     | `"1.2rem"`                | No       |
+| `check`           | Boolean    | `false`                   | No       |
+| `colorCheck`      | String     | `"neutral-1000"`          | No       |
+| `checkSize`       | String     | `"iconLarge"`             | No       |
+| `animation`       | Boolean    | `false`                   | No       |
+| `button`          | Boolean    | `false`                   | No       |
+| `bgButton`        | String     | `"green-300"`             | No       |
+| `textButton`      | String     | `"Close"`                 | No       |
+| `buttonTextColor` | String     | `"neutral-1000"`          | No       |
+| `hoverBgButton`   | String     | `"green-200"`             | No       |
+| `bodyColor`       | String     | `"neutral-100"`           | No       |
+| `overlayColor`    | String     | `"neutral-500"`           | No       |
+----------------------------------------------------------------------------------
 
-### `npm run eject`
+## How to change the colors ?
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You have access to a large ColorsSchema palette that you can write as in Tailwind CSS.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The range goes from 50, 100, 200, ... up to 900 except for neutral
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The colors are:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- neutral: neutral-000 is white, neutral 1000 is black
+- green
+- red
+- blue
+- yellow
 
-## Learn More
+For example, if you want to change the color of the close icon, you would add the props close to display the button and closeColor props to change the color like this:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```jsx
+<Modal close closeColor="red-500" />
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## You can change the icons size
 
-### Code Splitting
+You have access to a different sizes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Here are the sizes:
 
-### Analyzing the Bundle Size
+- `iconLarge`: 3rem,
+- `iconBase`: 2rem,
+- `header1`: 1.8rem,
+- `header2`: 1.6rem,
+- `header3`: 1.4rem,
+- `header4`: 1.2rem,
+- `header5`: 1.1rem,
+- `paragraph`: 1rem,
+- `helperText`: 0.8rem,
+- `copyrightText`: 0.7rem,
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+For example, if you want to change the size of the close icon, you would add the props close to display the icon and closeSize to change the size.
 
-### Making a Progressive Web App
+```jsx
+<Modal close closeSize="header3" />
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## ✌️ License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](https://opensource.org/licenses/MIT)
