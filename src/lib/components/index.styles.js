@@ -5,7 +5,7 @@ export const MainContainer = styled.div`
   width: 100vh;
 `;
 
-export const BodyModal = styled.div.attrs(({ color, theme }) => ({
+export const Body = styled.div.attrs(({ color, theme, darkMode = false }) => ({
   color: color,
   theme: theme,
 }))`
@@ -13,14 +13,9 @@ export const BodyModal = styled.div.attrs(({ color, theme }) => ({
     // console.log(theme[color]);
     return theme[color] || theme['neutral-100'];
   }};
-  box-shadow: rgba(
-    50,
-    50,
-    93,
-    0px 50px 100px -20px,
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset
-  );
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   max-width: 50%;
   min-width: 300px;
   min-height: 300px;
@@ -45,19 +40,20 @@ export const ContentContainer = styled.div`
   justify-content: space-around;
 `;
 
-export const Title = styled.h2.attrs(({ color, theme }) => ({
-  color: color,
+export const Title = styled.h2.attrs(({ darkMode = false, theme }) => ({
+  darkMode: darkMode,
   theme: theme,
 }))`
   font-family: sans-serif;
   width: 90%;
-  color: ${({ theme, color }) => theme[color]};
+  color: ${({ theme, darkMode }) =>
+    darkMode ? theme['neutral-100'] : theme['neutral-1000']};
   text-align: center;
   margin: 0;
   padding: 10px;
 `;
 
-const Text = styled.p.attrs(({ color, theme }) => ({
+export const Text = styled.p.attrs(({ color, theme }) => ({
   color: color,
   theme: theme,
 }))`
@@ -70,7 +66,7 @@ const Text = styled.p.attrs(({ color, theme }) => ({
   padding: 9px;
 `;
 
-const Button = styled.button.attrs(
+export const Button = styled.button.attrs(
   ({ color, theme, textColor, hoverColor }) => ({
     color: color,
     theme: theme,
