@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import BaseStyle from '../constants/baseTheme.js';
 import Modal from './../components/Modal';
 
