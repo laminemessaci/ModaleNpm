@@ -2,6 +2,7 @@
   "name": "customized-modal-react",
   "version": "0.1.0",
   "main": "dist/index.js",
+  "description": "Modal component that can be customized with everything like DOM elements, text or an other component",
   "module": "dist/index.js",
   "files": [
     "dist"
@@ -10,6 +11,32 @@
     "type": "git",
     "url": "https://github.com/laminemessaci/ModaleNpm"
   },
+  "keywords": [
+    "modal",
+    "custom",
+    "customized",
+    "react",
+    "tailwind",
+    "tailwindCSS",
+    "toast",
+    "Employee",
+    "Create",
+    "best",
+    "fast",
+    "lite",
+    "popup",
+    "window",
+    "dialog",
+    "simple",
+    "easy",
+    "alert"
+  ],
+  "author": "laminemessaci",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laminemessaci/ModaleNpm/issues"
+  },
+  "homepage": "https://github.com/laminemessaci/ModaleNpm#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -22,7 +49,9 @@
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "clean": "rm -rf dist coverage",
-    "clean:fix": "rm -rf node_modules coverage build dist docs package-lock.json"
+    "clean:fix": "rm -rf node_modules coverage build dist docs package-lock.json",
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
   },
   "eslintConfig": {
     "extends": [
