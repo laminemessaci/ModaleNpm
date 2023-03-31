@@ -9,7 +9,7 @@ const BaseStyle = createGlobalStyle`
     box-sizing: border-box;
 }
   body { 
-    background: ${ColorsSchema['green-500']};
+    background: ${ColorsSchema['neutral-100']};
     font-family: ${primaryFont};
   }
 `;

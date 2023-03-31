@@ -1,15 +1,16 @@
+import PropTypes from 'prop-types';
 import React from 'react';
+import { ColorsSchema, TypeScale } from '../constants/themes.js';
+import { StyledCircleIcon } from './assets/icons/CircleIcon';
+import { StyledCloseIcon } from './assets/index.js';
 import {
   Body,
-  MainContainer,
-  ContentContainer,
-  Title,
-  Text,
   Button,
+  ContentContainer,
+  MainContainer,
+  Text,
+  Title,
 } from './index.styles';
-import { ColorsSchema, TypeScale } from '../constants/themes.js';
-import { StyledCloseIcon } from './assets/index.js';
-import { StyledCircleIcon } from './assets/icons/CircleIcon';
 
 const Modal = ({
   setIsOpen,
@@ -23,14 +24,16 @@ const Modal = ({
   checkSize,
   colorCheck,
   button,
+  textButton,
+  check,
   bgButton,
   hoverBgButton,
   buttonTextColor,
 }) => {
   return (
     <MainContainer>
-      <Body color={bodyColor} theme={ColorsSchema}>
-        {true && (
+      <Body color={bodyColor} theme={ColorsSchema} darkMode={darkMode}>
+        {close && (
           <StyledCloseIcon
             color={closeColor}
             size={closeSize}
@@ -39,7 +42,7 @@ const Modal = ({
           />
         )}
         <ContentContainer>
-          {true && (
+          {check && (
             <StyledCircleIcon
               theme={ColorsSchema}
               type={TypeScale}
@@ -48,12 +51,14 @@ const Modal = ({
             />
           )}
 
-          <Title theme={ColorsSchema}>{title || 'Employee created!'}</Title>
+          <Title darkMode={false} theme={ColorsSchema}>
+            {title || 'Employee created!'}
+          </Title>
 
           <Text theme={ColorsSchema}>
             {text || 'If you want, you can create more !'}
           </Text>
-          {true && (
+          {button && (
             <Button
               onClick={() => setIsOpen(false)}
               theme={ColorsSchema}
@@ -61,7 +66,7 @@ const Modal = ({
               hoverColor={hoverBgButton}
               textColor={buttonTextColor}
             >
-              {text || 'Close'}
+              {textButton || 'Close'}
             </Button>
           )}
         </ContentContainer>
@@ -71,3 +76,22 @@ const Modal = ({
 };
 
 export default Modal;
+
+Modal.prototypes = {
+  setIsOpen: PropTypes.func.isRequired,
+  close: PropTypes.bool,
+  check: PropTypes.bool,
+  darkMode: PropTypes.bool,
+  bodyColor: PropTypes.string,
+  closeColor: PropTypes.string,
+  closeSize: PropTypes.string,
+  checkSize: PropTypes.string,
+  colorCheck: PropTypes.string,
+  button: PropTypes.Button,
+  textButton: PropTypes.string,
+  bgButton: PropTypes.string,
+  hoverBgButton: PropTypes.string,
+  buttonTextColor: PropTypes.string,
+  title: PropTypes.string,
+  text: PropTypes.string,
+};
