@@ -8,6 +8,19 @@ function App() {
   return (
     <>
       <BaseStyle />
+
+      <label
+        htmlFor="user-active"
+        className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+      >
+        &nbsp; &nbsp; darkMode &nbsp;
+      </label>
+      <input
+        id="user-active"
+        type="checkbox"
+        checked={darkMode}
+        onChange={() => setDarkMode(!darkMode)}
+      />
       <button
         onClick={() => setIsOpen(true)}
         style={{
@@ -29,6 +42,8 @@ function App() {
           close={() => setIsOpen(false)}
           check
           darkMode={darkMode}
+          checkSize={'3rem'}
+          text={'test'}
         />
       ) : null}
     </>

@@ -46,16 +46,18 @@ const Modal = ({
             <StyledCircleIcon
               theme={ColorsSchema}
               type={TypeScale}
-              size={40}
-              color={'green-400'}
+              size={checkSize}
+              color={colorCheck}
             />
           )}
 
-          <Title darkMode={false} theme={ColorsSchema}>
-            {title || 'Employee is created!'}
+          <Title darkMode={darkMode} theme={ColorsSchema}>
+            {title || 'Employee created successfully !'}
           </Title>
 
-          <Text theme={ColorsSchema}>{text || 'You can create more !'}</Text>
+          <Text theme={ColorsSchema} darkMode={darkMode}>
+            {text || null}
+          </Text>
           {button && (
             <Button
               onClick={() => setIsOpen(false)}

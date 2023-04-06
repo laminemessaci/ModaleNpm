@@ -9,16 +9,16 @@ export const Body = styled.div.attrs(({ color, theme, darkMode = false }) => ({
   color: color,
   theme: theme,
 }))`
-  background: ${({ theme, color }) => {
+  background: ${({ theme, color, darkMode }) => {
     // console.log(theme[color]);
-    return theme[color] || theme['neutral-100'];
+    return darkMode ? theme['neutral-700'] : theme[color];
   }};
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   max-width: 50%;
-  min-width: 300px;
-  min-height: 300px;
+  min-width: 380px;
+  min-height: 200px;
   border-radius: 8px;
   z-index: 10;
   position: absolute;
@@ -53,13 +53,14 @@ export const Title = styled.h2.attrs(({ darkMode = false, theme }) => ({
   padding: 10px;
 `;
 
-export const Text = styled.p.attrs(({ color, theme }) => ({
+export const Text = styled.p.attrs(({ color, darkMode = false, theme }) => ({
   color: color,
   theme: theme,
 }))`
   font-family: sans-serif;
   font-size: 1.125rem;
-  color: ${({ theme, color }) => theme[color]};
+  color: ${({ theme, darkMode }) =>
+    darkMode ? theme['neutral-100'] : theme['neutral-1000']};
   text-align: center;
   width: 90%;
   margin: 12px 0;
