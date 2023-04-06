@@ -2,13 +2,11 @@
 
 A styled modal component using the styled-components library. The component contains various styles for the different components.
 
+## Demo
 
-
-https://user-images.githubusercontent.com/60298344/230358792-341462ea-fcde-4c20-9df0-128af0644fb0.mp4
-
+<https://user-images.githubusercontent.com/60298344/230358792-341462ea-fcde-4c20-9df0-128af0644fb0.mp4>
 
 Uploading 20230406_130128.mp4…
-
 
 ## How to install
 
