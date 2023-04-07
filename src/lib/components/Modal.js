@@ -75,7 +75,7 @@ const Modal = ({
       </Body>
       <OverlyModal
         theme={ColorsSchema}
-        backgroundColor={overlayColor}
+        overlayColor={overlayColor}
         onClick={() => setIsOpen(false)}
       />
     </MainContainer>

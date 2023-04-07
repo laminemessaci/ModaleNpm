@@ -93,12 +93,12 @@ export const Button = styled.button.attrs(
   }
 `;
 
-export const OverlyModal = styled.div.attrs(({ theme, backgroundColor }) => ({
+export const OverlyModal = styled.div.attrs(({ theme, overlayColor }) => ({
   theme,
-  backgroundColor,
+  overlayColor,
 }))`
-  background: ${({ theme, backgroundColor }) =>
-    theme[backgroundColor] || theme['neutral-500']};
+  background: ${({ theme, overlayColor }) =>
+    theme[overlayColor] || theme['neutral-500']};
   height: 100vh;
   width: 100%;
   position: fixed;

@@ -44,6 +44,7 @@ function App() {
           darkMode={darkMode}
           checkSize={'3rem'}
           text={'test'}
+          overlayColor={'red-500'}
         />
       ) : null}
     </>
