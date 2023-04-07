@@ -8,6 +8,7 @@ import {
   Button,
   ContentContainer,
   MainContainer,
+  OverlyModal,
   Text,
   Title,
 } from './index.styles';
@@ -18,6 +19,7 @@ const Modal = ({
   text,
   darkMode,
   close,
+  overlayColor,
   bodyColor,
   closeColor,
   closeSize,
@@ -71,6 +73,11 @@ const Modal = ({
           )}
         </ContentContainer>
       </Body>
+      <OverlyModal
+        theme={ColorsSchema}
+        backgroundColor={overlayColor}
+        onClick={() => setIsOpen(false)}
+      />
     </MainContainer>
   );
 };

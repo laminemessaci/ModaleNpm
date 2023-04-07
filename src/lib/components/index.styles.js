@@ -92,3 +92,21 @@ export const Button = styled.button.attrs(
       theme[hoverColor] || theme['green-200']};
   }
 `;
+
+export const OverlyModal = styled.div.attrs(({ theme, backgroundColor }) => ({
+  theme,
+  backgroundColor,
+}))`
+  background: ${({ theme, backgroundColor }) =>
+    theme[backgroundColor] || theme['neutral-500']};
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: opacity 0.2s ease-out;
+  z-index: 1;
+`;
