@@ -4,7 +4,11 @@ A styled modal component using the styled-components library. The component cont
 
 ## Demo
 
-<https://user-images.githubusercontent.com/60298344/230358792-341462ea-fcde-4c20-9df0-128af0644fb0.mp4>
+
+
+
+https://user-images.githubusercontent.com/60298344/230691131-d8fa2b4f-6d71-439a-b5f0-6a5785a109a8.mp4
+
 
 ## How to install
 
