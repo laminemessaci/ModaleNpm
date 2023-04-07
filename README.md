@@ -17,6 +17,7 @@ You can find the github repository [here](https://github.com/laminemessaci/Modal
 
 ```jsx
 npm install customized-modal-react
+yarn add customized-modal-react
 ```
 
 ```jsx
