@@ -20,8 +20,6 @@ function App() {
   const [closeSize, setCloseSize] = useState('24px');
   const [checkSize, setCheckSize] = useState('24px');
   const [colorCheck, setColorCheck] = useState('green-300');
-
-  console.log(overlayColor);
   return (
     <>
       <BaseStyle />
