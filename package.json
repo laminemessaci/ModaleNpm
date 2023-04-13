@@ -5,7 +5,8 @@
   "description": "Modal component that can be customized with everything like DOM elements, text or an other component",
   "module": "dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "repository": {
     "type": "git",
