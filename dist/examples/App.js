@@ -115,7 +115,7 @@ function App() {
       return setClose(!close);
     }
   }), /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "chech",
+    htmlFor: "check",
     style: {
       fontSize: 22
     }

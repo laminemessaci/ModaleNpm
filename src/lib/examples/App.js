@@ -62,7 +62,7 @@ function App() {
             checked={close}
             onChange={() => setClose(!close)}
           />
-          <label htmlFor="chech" style={{ fontSize: 22 }}>
+          <label htmlFor="check" style={{ fontSize: 22 }}>
             &nbsp; &nbsp; Check &nbsp;
           </label>
           <input
