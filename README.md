@@ -4,8 +4,6 @@ A styled modal component using the styled-components library. The component cont
 
 ## Demo
 
-<https://user-images.githubusercontent.com/60298344/230691131-d8fa2b4f-6d71-439a-b5f0-6a5785a109a8.mp4>
-
 ## How to install
 
 You can find the npm package [here](https://github.com/laminemessaci/ModaleNpm).\
