@@ -1,11 +1,11 @@
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault").default;
+var _interopRequireDefault = require("C:/Users/lmess/PARCOURS FORMATION REACT OPC/Madale-Lib-NPM/lamine_modale/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.Title = exports.Text = exports.OverlyModal = exports.MainContainer = exports.ContentContainer = exports.Button = exports.Body = void 0;
-var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/taggedTemplateLiteral"));
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("C:/Users/lmess/PARCOURS FORMATION REACT OPC/Madale-Lib-NPM/lamine_modale/node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7;
 var MainContainer = _styledComponents.default.div(_templateObject || (_templateObject = (0, _taggedTemplateLiteral2.default)(["\n  height: 100%;\n  width: 100vh;\n"])));

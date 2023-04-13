@@ -1,6 +1,6 @@
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault").default;
+var _interopRequireDefault = require("C:/Users/lmess/PARCOURS FORMATION REACT OPC/Madale-Lib-NPM/lamine_modale/node_modules/@babel/runtime/helpers/interopRequireDefault.js").default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
