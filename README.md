@@ -8,26 +8,31 @@ A styled modal component using the styled-components library. The component cont
 
 ## How to install
 
-You can find the npm package [here](https://github.com/laminemessaci/ModaleNpm).\
-You can find the github repository [here](https://github.com/laminemessaci/ModaleNpm).
+Clone this repository :
+-You can find the github repository [here](https://github.com/laminemessaci/ModaleNpm).
 
 ```jsx
 npm install customized-modal-react
-yarn add customized-modal-react
+```
+
+OR
+
+```jsx
+yarn add  customized-modal-react   
 ```
 
 ```jsx
 import React, { Component } from 'react'
-import Modal from 'modalagnes73'
+import Modal from 'customized-modal-react'
 
 const Example = () => {
 
     const [isOpen, setIsOpen] = useState(false);
+     const [darkMode, setDarkMode] = useState(false);
 
 return(
     <>
-
-    {isOpen && <Modal setIsOpen={setIsOpen} close/>}
+    {isOpen && <Modal darkMode={true} setIsOpen={setIsOpen} close check={true}/>}
     <button onClick={() => setIsOpen(true)}>Open</button>
 
     </>

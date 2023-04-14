@@ -39,6 +39,7 @@
   "bugs": {
     "url": "https://github.com/laminemessaci/ModaleNpm/issues"
   },
+  "homepage": "https://github.com/laminemessaci/ModaleNpm",
   "dependencies": {
     "react-scripts": "5.0.1",
     "styled-components": "5.3.9"
