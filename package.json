@@ -1,6 +1,6 @@
 {
   "name": "customized-modal-react",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "main": "dist/index.js",
   "description": "Modal component that can be customized with everything like DOM elements, text or an other component",
   "module": "dist/index.js",
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/laminemessaci/ModaleNpm"
   },
-  "homepage": "https://github.com/laminemessaci/ModaleNpm#README.md",
+  "homepage": "https://github.com/laminemessaci/ModaleNpm",
   "keywords": [
     "modal",
     "custom",
@@ -39,7 +39,6 @@
   "bugs": {
     "url": "https://github.com/laminemessaci/ModaleNpm/issues"
   },
-  "homepage": "https://github.com/laminemessaci/ModaleNpm",
   "dependencies": {
     "react-scripts": "5.0.1",
     "styled-components": "5.3.9"
