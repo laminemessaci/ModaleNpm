@@ -9,6 +9,7 @@
     "LICENSE",
     "README.md"
   ],
+  "readme": "README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/laminemessaci/ModaleNpm"
@@ -19,8 +20,6 @@
     "custom",
     "customized",
     "react",
-    "tailwind",
-    "tailwindCSS",
     "toast",
     "Employee",
     "Create",
