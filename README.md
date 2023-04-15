@@ -4,7 +4,7 @@ A styled modal component using the styled-components library. The component cont
 
 ## Demo
 
-<https://screenrec.com/share/8z05gSjAsI>
+[Video Demo here](https://screenrec.com/share/8z05gSjAsI)
 
 ## How to install
 
