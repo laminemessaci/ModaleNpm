@@ -180,7 +180,33 @@ function App() {
     value: "red-200"
   }), /*#__PURE__*/_react.default.createElement("option", {
     value: "neutral-300"
-  }))), isOpen ? /*#__PURE__*/_react.default.createElement(_Modal.default, {
+  })), /*#__PURE__*/_react.default.createElement("label", {
+    style: {
+      fontSize: 22
+    },
+    htmlFor: "title"
+  }, ' ', "\xA0 \xA0 title \xA0"), /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    name: "title",
+    id: "title",
+    placeholder: "title",
+    onChange: function onChange(e) {
+      return setTitle(e.target.value);
+    }
+  }), /*#__PURE__*/_react.default.createElement("label", {
+    style: {
+      fontSize: 22
+    },
+    htmlFor: "text"
+  }, ' ', "\xA0 \xA0 text \xA0"), /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    name: "text",
+    id: "text",
+    placeholder: "text",
+    onChange: function onChange(e) {
+      return setText(e.target.value);
+    }
+  })), isOpen ? /*#__PURE__*/_react.default.createElement(_Modal.default, {
     button: button,
     setIsOpen: function setIsOpen() {
       return _setIsOpen(function (prev) {
@@ -192,9 +218,9 @@ function App() {
     } : false,
     check: check,
     title: title,
+    text: text,
     darkMode: darkMode,
     checkSize: '3rem',
-    text: 'test',
     overlayColor: overlayColor
   }) : null);
 }
