@@ -119,6 +119,30 @@ function App() {
           <option value="red-200" />
           <option value="neutral-300" />
         </datalist>
+        <label style={{ fontSize: 22 }} htmlFor="title">
+          {' '}
+          &nbsp; &nbsp; title &nbsp;
+        </label>
+
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="title"
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <label style={{ fontSize: 22 }} htmlFor="text">
+          {' '}
+          &nbsp; &nbsp; text &nbsp;
+        </label>
+
+        <input
+          type="text"
+          name="text"
+          id="text"
+          placeholder="text"
+          onChange={(e) => setText(e.target.value)}
+        />
       </div>
       {isOpen ? (
         <Modal
@@ -127,9 +151,9 @@ function App() {
           close={close ? () => setIsOpen(false) : false}
           check={check}
           title={title}
+          text={text}
           darkMode={darkMode}
           checkSize={'3rem'}
-          text={'test'}
           overlayColor={overlayColor}
         />
       ) : null}
