@@ -4,16 +4,13 @@ A styled modal component using the styled-components library. The component cont
 
 ## Demo
 
-[Video Demo here](https://screenrec.com/share/wIpmHJioPn)
-
 [Video Demo here](https://user-images.githubusercontent.com/60298344/233417180-8034ea82-f27e-40da-8b42-6512f3f98c01.mp4)
-
 
 ## How to install
 
 Clone this repository :
- 
- - You can find the github repository [here](https://github.com/laminemessaci/ModaleNpm).
+
+- You can find the github repository [here](https://github.com/laminemessaci/ModaleNpm).
 
 ```jsx
 npm install customized-modal-react
